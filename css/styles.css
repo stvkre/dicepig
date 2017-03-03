@@ -20,3 +20,19 @@ img{
   float: left;
   padding-top: 20px;
 }
+
+.begin {
+  border-style: dashed;;
+  border-width: thick;
+  border-color: yellow;
+
+}
+
+.play  {
+  padding-top: 50px;
+}
+
+.footer {
+  display: block;
+  position: relative;
+}

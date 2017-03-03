@@ -22,10 +22,14 @@
         <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
         <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
         <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
-        <li>The first player to score 100 or more points wins.</li>
-        <p>click 'let's play' to begin</p>
+        <li>The first player to score 100 or more points wins.</li><br>
+        <div class="begin">
+          <p><u>click 'let's play' to begin</u></p>
+        </div>
       </div>
-      <button type="submit" class="btn btn-success" id="slide">Let's play</button>
+      <div class="play">
+        <button type="submit" class="btn btn-success" id="slide">Let's play</button>
+      </div>
     </div>
   </div>
   <div id="pitch">
@@ -36,15 +40,15 @@
           <label for="roll1">Player 1</label>
           <div class="1">
             <span id="die1"></span> <br>
-
           </div>
           <button type="button" class="btn btn-warning">Hold/Pass Turn</button> <button type="button" onClick="run" class="btn btn-success">Roll</button><br>
           <label for="results">Scores</label><span id="span1"></span><br>
           <label for="results">Total</label><span id="result2"></span>
+        </div>
       </form>
 
-      </div>
     </div>
+
     <div class="col-md-4">
       <img src="img/dice.gif">
 
