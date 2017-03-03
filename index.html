@@ -4,47 +4,68 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/styles.css">
+
+
   <title>PIG DICE</title>
 </head>
 
 <body>
-  <h1><strong>PIG DICE</strong></h1>
   <div class="jumbotron">
+    <h1><strong>PIG DICE</strong></h1>
+    <img src="img/dice2.gif">
     <div class="container">
-      <p><strong>Let's Play</strong></p>
-      <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold"</p>
-      <ul>
+      <div class="rules">
+        <p><strong>Here are the rules</strong></p>
+        <li>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold"</li>
         <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
         <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
         <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
-      </ul>
-      <p>The first player to score 10 or more points wins.</p>
+        <li>The first player to score 100 or more points wins.</li>
+        <p>click 'let's play' to begin</p>
+      </div>
+      <button type="submit" class="btn btn-success" id="slide">Let's play</button>
     </div>
   </div>
-  <div class="col-md-3">
-    <form id="roll1">
-      <div class="form-group">
-        <label for="roll1">Player 1</label>
-        <input type="text" class="form-control" id="new-roll1"> <br>
-        <button type="submit" class="btn btn-warning">Hold</button> <button type="submit" class="btn btn-success">Roll</button>
-    </form>
+  <div id="pitch">
+
+    <div class="col-md-4">
+      <form id="roll1">
+        <div class="form-group">
+          <label for="roll1">Player 1</label>
+          <div class="1">
+            <span id="die1"></span> <br>
+
+          </div>
+          <button type="button" class="btn btn-warning">Hold/Pass Turn</button> <button type="button" onClick="run" class="btn btn-success">Roll</button><br>
+          <label for="results">Scores</label><span id="span1"></span><br>
+          <label for="results">Total</label><span id="result2"></span>
+      </form>
+
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="img/dice.gif">
 
     </div>
-  </div>
-  <div class="col-md-3">
-    <label for="results">Scores</label>
+    <div class="col-md-4">
+      <form id="roll2">
+        <div class="form-group">
+          <label for="roll2">Player 2</label>
+          <span id="new-roll2"></span><br>
+          <button type="button" class="btn btn-warning">Hold/Pass Turn</button> <button type="button" onClick="sprint" class="btn btn-success">Roll</button><br>
+          <label for="results">Scores</label><br><span id="result3"></span>
+          <label for="results">Total</label><span id="result4"></span>
+      </form>
 
-  </div>
-  <div class="col-md-3">
-    <form id="roll2">
-      <div class="form-group">
-        <label for="roll2">Player 2</label>
-        <input type="text" class="form-control" id="new-roll2"><br>
-        <button type="submit" class="btn btn-warning">Hold</button> <button type="submit" class="btn btn-success">Roll</button>
-    </form>
-
+      </div>
     </div>
+  </div>
+
+  <div class="footer">
+    <p><strong>Copyright (c) 2016 Steve Kiarie</strong></p>
+
   </div>
 
 
@@ -55,4 +76,4 @@
 
 </body>
 
-</html>
+</html

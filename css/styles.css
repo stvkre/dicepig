@@ -1,0 +1,22 @@
+body{
+  text-align: center;
+}
+
+.jumbotron{
+  background-color: black;
+  color: white;
+}
+
+#pitch {
+  display: none;
+
+}
+
+img{
+  background-position: center;
+}
+
+.rules  {
+  float: left;
+  padding-top: 20px;
+}
