@@ -1,20 +1,33 @@
-function run() {
-  var die1 = document.getElementById("die1");
-  var span1 = document.getElementById("span1");
-
-  var core = Math.floor(Math.random() * 6) + 1;
-
-  die1.innerHTML = core;
-  span1.innerHTML = core;
-
-
-
-}
 //transition to game page
 $(document).ready(function() {
   $("button#slide").click(function() {
     $(".jumbotron").hide(1000);
     $("#pitch").slideDown();
   });
+  //end transition
+
+
+  $(document).ready(function() {
+    // functions
+    function Player(userName, score, turnTotal) {
+      this.userName = userName;
+      this.score = score;
+      this.turnTotal = turnTotal;
+    };
+
+    Player.prototype.addScore = function(dice) {
+      this.score += dice;
+    };
+  });
+
 });
-//end transition
+
+//ui logic
+var nameOne;
+var nameTwo;
+var score = 0;
+var turn_total = 0;
+var playerOne = new Player(nameOne, score, turn_total);
+var playerTwo = new Player(nameTwo, score, turn_total);
+var holdScoreOne = [];
+var holdScoreTwo = [];
