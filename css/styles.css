@@ -36,5 +36,5 @@ img{
 
 .footer {
   display: block;
-  position: relative;
+  position: inherit;
 }
