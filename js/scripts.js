@@ -10,10 +10,11 @@ function run() {
 
 
 }
-
+//transition to game page
 $(document).ready(function() {
   $("button#slide").click(function() {
     $(".jumbotron").hide(1000);
     $("#pitch").slideDown();
   });
 });
+//end transition
